@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_top"
+        android:title="少女前線 時間查詢">
+    <menu>
+        <item
+            android:state_focused="false"
+            android:id="@+id/nav_index"
+            android:icon="@drawable/ic_home"
+            android:title="主頁" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_category_time"
+        android:title="時間">
+
+        <menu>
+            <item
+                android:id="@+id/nav_time_girl"
+                android:title="人型時間" />
+            <item
+                android:id="@+id/nav_time_device"
+                android:title="裝備時間" />
+            <item
+                android:id="@+id/nav_time_fairy"
+                android:title="妖精時間" />
+            <item
+                android:id="@+id/nav_time_make"
+                android:title="模擬造槍" />
+            <item
+                android:id="@+id/nav_time_make_device"
+                android:title="模擬造裝" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_category_list"
+        android:title="圖鑑">
+
+        <menu>
+            <item
+                android:id="@+id/nav_time_list"
+                android:title="人型圖鑑" />
+            <item
+                android:id="@+id/nav_time_list_fairy"
+                android:title="妖精圖鑑" />
+            <item
+                android:id="@+id/nav_time_coll_girl"
+                android:title="收集率圖-槍" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_category_list_fb"
+        android:title="招募區域">
+
+        <menu>
+            <item
+                android:id="@+id/nav_fb_list"
+                android:title="好友招募區域" />
+            <item
+                android:id="@+id/nav_time_like_list"
+                android:title="讚友招募區域" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_category_tools"
+        android:title="工具">
+
+        <menu>
+            <item
+                android:id="@+id/nav_image"
+                android:title="圖片庫" />
+            <item
+                android:id="@+id/nav_image_add"
+                android:title="添加作品" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_category_line"
+        android:title="Line">
+
+        <menu>
+            <item
+                android:id="@+id/nav_bot_line"
+                android:title="Line 機械人" />
+            <item
+                android:id="@+id/nav_time_more_line"
+                android:title="Line 群"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_other"
+        android:title="其他">
+
+        <menu>
+            <item
+                android:id="@+id/nav_shared"
+                android:icon="@drawable/ic_menu_share"
+                android:title="分享" />
+            <item
+                android:id="@+id/nav_version"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="版本" />
+        </menu>
+    </item>
+
+
+</menu>
