@@ -4,17 +4,17 @@
     <item
         android:id="@+id/action_more_feedback"
         android:orderInCategory="100"
-        android:title="問題回報或建議"
+        android:title="@string/feedback"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_more_about"
         android:orderInCategory="100"
-        android:title="關於"
+        android:title="@string/about"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_updateLog"
         android:orderInCategory="100"
-        android:title="更新記錄"
+        android:title="@string/updateLog"
         app:showAsAction="never" />
 
 

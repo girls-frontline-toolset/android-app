@@ -3,111 +3,115 @@
 
     <item
         android:id="@+id/nav_top"
-        android:title="少女前線 時間查詢">
+        android:title="@string/app_name">
     <menu>
         <item
             android:state_focused="false"
             android:id="@+id/nav_index"
             android:icon="@drawable/ic_home"
-            android:title="主頁" />
+            android:title="@string/home" />
         </menu>
     </item>
 
     <item
         android:id="@+id/nav_category_time"
-        android:title="時間">
+        android:title="@string/time">
 
         <menu>
             <item
                 android:id="@+id/nav_time_girl"
-                android:title="人型時間" />
+                android:title="@string/time_girl" />
             <item
                 android:id="@+id/nav_time_device"
-                android:title="裝備時間" />
+                android:title="@string/time_device" />
             <item
                 android:id="@+id/nav_time_fairy"
-                android:title="妖精時間" />
+                android:title="@string/time_fairy" />
             <item
                 android:id="@+id/nav_time_make"
-                android:title="模擬造槍" />
+                android:title="@string/time_make" />
             <item
                 android:id="@+id/nav_time_make_device"
-                android:title="模擬造裝" />
+                android:title="@string/time_make_device" />
+            <item
+                android:id="@+id/nav_time_hMake"
+                android:title="@string/time_hMake" />
+            <item
+                android:id="@+id/nav_time_make_HDevice"
+                android:title="@string/time_make_HDevice" />
+
         </menu>
     </item>
 
     <item
         android:id="@+id/nav_category_list"
-        android:title="圖鑑">
+        android:title="@string/i">
 
         <menu>
             <item
                 android:id="@+id/nav_time_list"
-                android:title="人型圖鑑" />
+                android:title="@string/time_list" />
             <item
                 android:id="@+id/nav_time_list_fairy"
-                android:title="妖精圖鑑" />
-            <item
-                android:id="@+id/nav_time_coll_girl"
-                android:title="收集率圖-槍" />
+                android:title="@string/list_fairy" />
         </menu>
     </item>
 
     <item
         android:id="@+id/nav_category_list_fb"
-        android:title="招募區域">
+        android:title="@string/list">
 
         <menu>
             <item
                 android:id="@+id/nav_fb_list"
-                android:title="好友招募區域" />
+                android:title="@string/fb_list" />
             <item
                 android:id="@+id/nav_time_like_list"
-                android:title="讚友招募區域" />
+                android:title="@string/fb_like" />
         </menu>
     </item>
 
     <item
         android:id="@+id/nav_category_tools"
-        android:title="工具">
+        android:title="@string/tools">
 
         <menu>
             <item
                 android:id="@+id/nav_image"
-                android:title="圖片庫" />
+                android:title="@string/image" />
             <item
                 android:id="@+id/nav_image_add"
-                android:title="添加作品" />
+                android:title="@string/add_image" />
         </menu>
     </item>
 
     <item
         android:id="@+id/nav_category_line"
-        android:title="Line">
+        android:title="@string/line">
 
         <menu>
             <item
                 android:id="@+id/nav_bot_line"
-                android:title="Line 機械人" />
+                android:title="@string/line_bot" />
             <item
                 android:id="@+id/nav_time_more_line"
-                android:title="Line 群"/>
+                android:title="@string/line_group"/>
         </menu>
     </item>
 
     <item
         android:id="@+id/nav_other"
-        android:title="其他">
+        android:title="@string/other">
 
         <menu>
             <item
                 android:id="@+id/nav_shared"
                 android:icon="@drawable/ic_menu_share"
-                android:title="分享" />
+                android:title="@string/shared" />
             <item
                 android:id="@+id/nav_version"
                 android:icon="@drawable/ic_menu_manage"
-                android:title="版本" />
+                android:title="@string/version" />
         </menu>
     </item>
 

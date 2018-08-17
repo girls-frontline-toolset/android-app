@@ -208,9 +208,9 @@ public class MainActivity extends AppCompatActivity
         } else if(id == R.id.nav_time_fairy){
             call = "javascript:window.pushPush('/time/fairy')";
         } else if (id == R.id.nav_time_make) {
-             call = "javascript:window.pushPush('/time/make')";
+             call = "javascript:window.pushPush('/make/girl')";
         } else if (id == R.id.nav_time_make_device) {
-             call = "javascript:window.pushPush('/time/make_device')";
+             call = "javascript:window.pushPush('/time/device')";
         } else if (id == R.id.nav_time_list) {
              call = "javascript:window.pushPush('/time/list')";
         } else if (id == R.id.nav_time_list_fairy) {
@@ -229,6 +229,10 @@ public class MainActivity extends AppCompatActivity
              call = "javascript:window.pushPush('/tool/image')";
          }else if (id == R.id.nav_image_add) {
              call = "javascript:window.pushPush('/tool/image_add')";
+         }else if (id == R.id.nav_time_hMake) {
+             call = "javascript:window.pushPush('/make/hDevice')";
+         }else if (id == R.id.nav_time_make_HDevice) {
+             call = "javascript:window.pushPush('/make/device')";
          }else if (id == R.id.nav_index){
              call = "javascript:window.pushPush('/')";
          }else if (id== R.id.nav_shared){

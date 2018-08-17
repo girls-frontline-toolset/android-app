@@ -1,8 +1,32 @@
 <resources>
-    <string name="app_name">少女前線 時間查詢</string>
+    <string name="app_name">少女前線-工具集</string>
+    <string name="line">Line</string>
+    <string name="line_bot">Line 機械人</string>
+    <string name="line_group">Line 群</string>
+    <string name="other">其他</string>
+    <string name="shared">分享</string>
+    <string name="version">版本</string>
+    <string name="add_image">添加作品</string>
+    <string name="image">圖片庫</string>
+    <string name="tools">工具</string>
+    <string name="fb_like">讚友招募區域"</string>
+    <string name="fb_list">好友招募區域</string>
+    <string name="list">招募區域</string>
+    <string name="list_fairy">妖精圖鑑</string>
+    <string name="time_list">人型圖鑑</string>
+    <string name="i">圖鑑</string>
+    <string name="home">主頁</string>
+    <string name="time">時間</string>
+    <string name="time_girl">人型時間</string>
+    <string name="time_device">裝備時間</string>
+    <string name="time_fairy">妖精時間</string>
+    <string name="time_make">模擬造槍</string>
+    <string name="time_make_device">模擬造裝</string>
+    <string name="time_hMake">模擬重造-槍</string>
+    <string name="time_make_HDevice">模擬重造-裝</string>
+    <string name="feedback">問題回報或建議</string>
+    <string name="about">關於</string>
+    <string name="updateLog">更新記錄</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
 </resources>
