@@ -27,6 +27,7 @@
     <string name="feedback">問題回報或建議</string>
     <string name="about">關於</string>
     <string name="updateLog">更新記錄</string>
-
+    <string name="navigation_drawer_open">開始</string>
+    <string name="navigation_drawer_close">關閉</string>
 
 </resources>

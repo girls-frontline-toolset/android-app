@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity
         });
         //webview.clearCache(true);
         webview.setWebChromeClient(new WebChromeClient());
-        webview.loadUrl("http://192.168.10.235:8080/?fn=nbar");
+        webview.loadUrl("https://www.ntw-20.com/?fn=nbar");
 
         dlgAlert = new AlertDialog.Builder(this);
         PackageInfo pInfo = null;
@@ -210,13 +210,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_time_make) {
              call = "javascript:window.pushPush('/make/girl')";
         } else if (id == R.id.nav_time_make_device) {
-             call = "javascript:window.pushPush('/time/device')";
+             call = "javascript:window.pushPush('/make/device')";
         } else if (id == R.id.nav_time_list) {
              call = "javascript:window.pushPush('/time/list')";
         } else if (id == R.id.nav_time_list_fairy) {
              call = "javascript:window.pushPush('/time/list_fairy')";
-        } else if (id == R.id.nav_time_coll_girl) {
-             call = "javascript:window.pushPush('/coll/girl')";
         }else if (id == R.id.nav_fb_list) {
              call = "javascript:window.pushPush('/fb/list')";
         }else if (id == R.id.nav_time_like_list) {
@@ -227,12 +225,10 @@ public class MainActivity extends AppCompatActivity
              call = "javascript:window.pushPush('/more/line')";
          }else if (id == R.id.nav_image) {
              call = "javascript:window.pushPush('/tool/image')";
-         }else if (id == R.id.nav_image_add) {
-             call = "javascript:window.pushPush('/tool/image_add')";
          }else if (id == R.id.nav_time_hMake) {
-             call = "javascript:window.pushPush('/make/hDevice')";
+             call = "javascript:window.pushPush('/make/hGirl')";
          }else if (id == R.id.nav_time_make_HDevice) {
-             call = "javascript:window.pushPush('/make/device')";
+             call = "javascript:window.pushPush('/make/hDevice')";
          }else if (id == R.id.nav_index){
              call = "javascript:window.pushPush('/')";
          }else if (id== R.id.nav_shared){
