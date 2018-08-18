@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ドールズフロントライン-工具セット</string>
+    <string name="tools">工具</string>
+    <string name="time_list">人形図鑑</string>
+    <string name="list_fairy">妖精図鑑</string>
+    <string name="i">図鑑</string>
+    <string name="fb_like">讚友の募集エリア</string>
+    <string name="list">募集エリア</string>
+    <string name="fb_list">友人の募集エリア</string>
+    <string name="feedback">告や提案</string>
+    <string name="about">について</string>
+    <string name="updateLog">日誌を更新</string>
+    <string name="line_group">LINEグループ(台湾語)</string>
+    <string name="time_make">模擬造銃</string>
+    <string name="time_hMake">模擬大型製作-銃</string>
+    <string name="time_make_device">模擬造裝備</string>
+    <string name="time_make_HDevice">模擬大型製作-裝備</string>
+    <string name="time_device">裝備製造時間問合せ</string>
+    <string name="time_fairy">妖精製造時間問合せ</string>
+    <string name="time_girl">人形製造時間問合せ</string>
+    <string name="add_image">添加多く作品</string>
+    <string name="image">フォトギャラリー</string>
+    <string name="other">その他</string>
+    <string name="shared">シェア</string>
+    <string name="version">バージョン</string>
+    <string name="line_bot">Line ロボット(台湾語)</string>
+    <string name="home">ホームページ</string>
+    <string name="time">時間</string>
+    <string name="navigation_drawer_open">スタート</string>
+    <string name="navigation_drawer_close">閉じる</string>
+</resources>

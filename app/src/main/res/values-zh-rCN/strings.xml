@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">少女前線-工具集</string>
+    <string name="line_bot">Line 机械人</string>
+    <string name="line_group">LINE群</string>
+    <string name="other">其他</string>
+    <string name="add_image">添加更多作品</string>
+    <string name="image">图片库</string>
+    <string name="tools">工具</string>
+    <string name="fb_like">赞友招募区域</string>
+    <string name="fb_list">好友招募区域</string>
+    <string name="list">招募区域</string>
+    <string name="list_fairy">妖精图鉴</string>
+    <string name="time_list">人型图鉴</string>
+    <string name="i">图鉴</string>
+    <string name="home">主页</string>
+    <string name="time_girl">人型时间</string>
+    <string name="time">时间</string>
+    <string name="time_device">装备时间</string>
+    <string name="time_fairy">妖精时间</string>
+    <string name="time_make">模拟造枪</string>
+    <string name="time_make_HDevice">模拟重造-装</string>
+    <string name="time_hMake">模拟重造-枪</string>
+    <string name="time_make_device">模拟造装</string>
+    <string name="feedback">回报或建议</string>
+    <string name="about">关于</string>
+    <string name="updateLog">更新日志</string>
+    <string name="navigation_drawer_open">开始</string>
+    <string name="navigation_drawer_close">关闭</string>
+    <string name="shared">分享</string>
+    <string name="version">版本</string>
+</resources>

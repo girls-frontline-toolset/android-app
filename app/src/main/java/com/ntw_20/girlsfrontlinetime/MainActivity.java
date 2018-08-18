@@ -16,6 +16,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.ShareActionProvider;
 import android.util.Base64;
+import android.view.KeyEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -46,12 +47,12 @@ import java.util.regex.Pattern;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private  WebView webview;
+    private WebView webview;
     private ShareActionProvider mShareActionProvider;
-    private String JsonUrl = "https://www.ntw-20.com/common/apk/version.json" ;
+    private String JsonUrl = "https://www.ntw-20.com/common/apk/version.json";
     //get json task
     private GetVersion task = null;
-    private AlertDialog.Builder dlgAlert  = null;
+    private AlertDialog.Builder dlgAlert = null;
     private String version = "";
 
     //update link
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity
     public String parseBase64(String base64) {
 
         try {
-            Pattern pattern = Pattern.compile("((?<=base64,).*\\s*)",Pattern.DOTALL|Pattern.MULTILINE);
+            Pattern pattern = Pattern.compile("((?<=base64,).*\\s*)", Pattern.DOTALL | Pattern.MULTILINE);
             Matcher matcher = pattern.matcher(base64);
             if (matcher.find()) {
                 return matcher.group().toString();
@@ -78,19 +79,19 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        GetVersion  task = new GetVersion(this);
+        GetVersion task = new GetVersion(this);
         task.execute(JsonUrl);
 
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       // FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-       // fab.setOnClickListener(new View.OnClickListener() {
+        // FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        // fab.setOnClickListener(new View.OnClickListener() {
         //    @Override
         //    public void onClick(View view) {
         //        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-         //               .setAction("Action", null).show();
+        //               .setAction("Action", null).show();
         //    }
         //});
 
@@ -134,7 +135,7 @@ public class MainActivity extends AppCompatActivity
                         }
                     } catch (URISyntaxException e) {
                     }
-                }else if(!url.startsWith("https://www.ntw-20.com")){
+                } else if (!url.startsWith("https://www.ntw-20.com")) {
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                     startActivity(browserIntent);
                     return true;
@@ -145,7 +146,18 @@ public class MainActivity extends AppCompatActivity
         });
         //webview.clearCache(true);
         webview.setWebChromeClient(new WebChromeClient());
-        webview.loadUrl("https://www.ntw-20.com/?fn=nbar");
+
+        switch (java.util.Locale.getDefault().getLanguage()){
+            case "ja":
+            case "ja-jp":
+                webview.loadUrl("https://www.ntw-20.com/?fn=nbar&lang=ja");
+                break;
+            case "zh-cn":
+                webview.loadUrl("https://www.ntw-20.com/?fn=nbar&lang=cn");
+                break;
+            default:
+                webview.loadUrl("https://www.ntw-20.com/?fn=nbar");
+        }
 
         dlgAlert = new AlertDialog.Builder(this);
         PackageInfo pInfo = null;
@@ -155,6 +167,16 @@ public class MainActivity extends AppCompatActivity
             e.printStackTrace();
         }
         version = pInfo.versionName;
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event){
+
+    if ((keyCode == KeyEvent.KEYCODE_BACK)) {
+        webview.loadUrl("javascript:window.goBack()");
+        return true;
+    }
+        return super.onKeyDown(keyCode, event);
     }
 
     @Override
@@ -184,9 +206,9 @@ public class MainActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_more_feedback) {
             call = "javascript:window.pushPush('/more/feedback')";
-        }else if(id == R.id.action_more_about){
+        } else if (id == R.id.action_more_about) {
             call = "javascript:window.pushPush('/more/about')";
-        }else if(id == R.id.action_updateLog){
+        } else if (id == R.id.action_updateLog) {
             call = "javascript:window.pushPush('/log/update')";
         }
         webview.loadUrl(call);
@@ -201,62 +223,62 @@ public class MainActivity extends AppCompatActivity
 
         int id = item.getItemId();
 
-         if(id == R.id.nav_time_girl){
+        if (id == R.id.nav_time_girl) {
             call = "javascript:window.pushPush('/time/girl')";
-        } else if(id == R.id.nav_time_device){
-           call = "javascript:window.pushPush('/time/device')";
-        } else if(id == R.id.nav_time_fairy){
+        } else if (id == R.id.nav_time_device) {
+            call = "javascript:window.pushPush('/time/device')";
+        } else if (id == R.id.nav_time_fairy) {
             call = "javascript:window.pushPush('/time/fairy')";
         } else if (id == R.id.nav_time_make) {
-             call = "javascript:window.pushPush('/make/girl')";
+            call = "javascript:window.pushPush('/make/girl')";
         } else if (id == R.id.nav_time_make_device) {
-             call = "javascript:window.pushPush('/make/device')";
+            call = "javascript:window.pushPush('/make/device')";
         } else if (id == R.id.nav_time_list) {
-             call = "javascript:window.pushPush('/time/list')";
+            call = "javascript:window.pushPush('/time/list')";
         } else if (id == R.id.nav_time_list_fairy) {
-             call = "javascript:window.pushPush('/time/list_fairy')";
-        }else if (id == R.id.nav_fb_list) {
-             call = "javascript:window.pushPush('/fb/list')";
-        }else if (id == R.id.nav_time_like_list) {
-             call = "javascript:window.pushPush('/like/list')";
-        }else if (id == R.id.nav_bot_line) {
-             call = "javascript:window.pushPush('/bot/line')";
-         }else if (id == R.id.nav_time_more_line) {
-             call = "javascript:window.pushPush('/more/line')";
-         }else if (id == R.id.nav_image) {
-             call = "javascript:window.pushPush('/tool/image')";
-         }else if (id == R.id.nav_time_hMake) {
-             call = "javascript:window.pushPush('/make/hGirl')";
-         }else if (id == R.id.nav_time_make_HDevice) {
-             call = "javascript:window.pushPush('/make/hDevice')";
-         }else if (id == R.id.nav_index){
-             call = "javascript:window.pushPush('/')";
-         }else if (id== R.id.nav_shared){
-             Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-             sharingIntent.setType("text/plain");
-             sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-             String shareBody = "少女前線查詢APP: \n https://www.ntw-20.com/tool/android";
-             sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
-             sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
-             startActivity(Intent.createChooser(sharingIntent, "分享"));
+            call = "javascript:window.pushPush('/time/list_fairy')";
+        } else if (id == R.id.nav_fb_list) {
+            call = "javascript:window.pushPush('/fb/list')";
+        } else if (id == R.id.nav_time_like_list) {
+            call = "javascript:window.pushPush('/like/list')";
+        } else if (id == R.id.nav_bot_line) {
+            call = "javascript:window.pushPush('/bot/line')";
+        } else if (id == R.id.nav_time_more_line) {
+            call = "javascript:window.pushPush('/more/line')";
+        } else if (id == R.id.nav_image) {
+            call = "javascript:window.pushPush('/tool/image')";
+        } else if (id == R.id.nav_time_hMake) {
+            call = "javascript:window.pushPush('/make/hGirl')";
+        } else if (id == R.id.nav_time_make_HDevice) {
+            call = "javascript:window.pushPush('/make/hDevice')";
+        } else if (id == R.id.nav_index) {
+            call = "javascript:window.pushPush('/')";
+        } else if (id == R.id.nav_shared) {
+            Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+            String shareBody = "少女前線查詢APP: \n https://www.ntw-20.com/tool/android";
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+            startActivity(Intent.createChooser(sharingIntent, "分享"));
 
-         }else if(id == R.id.nav_version){
-             try {
-                 PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
-                 String version = pInfo.versionName;
+        } else if (id == R.id.nav_version) {
+            try {
+                PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
+                String version = pInfo.versionName;
 
-                 dlgAlert.setMessage("版本:" +version );
-                 dlgAlert.setTitle("版本");
-                 dlgAlert.setPositiveButton("OK", null);
-                 dlgAlert.setNegativeButton(null, null);
-                 dlgAlert.setCancelable(true);
-                 dlgAlert.create().show();
+                dlgAlert.setMessage("版本:" + version);
+                dlgAlert.setTitle("版本");
+                dlgAlert.setPositiveButton("OK", null);
+                dlgAlert.setNegativeButton(null, null);
+                dlgAlert.setCancelable(true);
+                dlgAlert.create().show();
 
-             } catch (PackageManager.NameNotFoundException e) {
-                 e.printStackTrace();
-             }
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+            }
 
-         }
+        }
 
         webview.loadUrl(call);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -285,7 +307,7 @@ public class MainActivity extends AppCompatActivity
                 // https  to save the data
                 String line = "";
                 String reply = "";
-                BufferedReader reader = new BufferedReader( new InputStreamReader(conn.getInputStream()));
+                BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                 while ((line = reader.readLine()) != null)
                     reply += line;
                 reader.close();
@@ -332,9 +354,9 @@ public class MainActivity extends AppCompatActivity
             }
         }
 
-        }
-
     }
+
+}
 
 
 
