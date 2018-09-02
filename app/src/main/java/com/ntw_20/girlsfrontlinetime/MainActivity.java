@@ -253,6 +253,8 @@ public class MainActivity extends AppCompatActivity
             call = "javascript:window.pushPush('/make/hDevice')";
         } else if (id == R.id.nav_index) {
             call = "javascript:window.pushPush('/')";
+        } else if (id == R.id.nav_doc_list) {
+            call = "javascript:window.pushPush('/list/doc')";
         } else if (id == R.id.nav_shared) {
             Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
             sharingIntent.setType("text/plain");

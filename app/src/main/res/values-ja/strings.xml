@@ -29,4 +29,5 @@
     <string name="time">時間</string>
     <string name="navigation_drawer_open">スタート</string>
     <string name="navigation_drawer_close">閉じる</string>
+    <string name="doc_list">実践文庫</string>
 </resources>

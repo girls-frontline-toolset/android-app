@@ -29,4 +29,5 @@
     <string name="navigation_drawer_close">关闭</string>
     <string name="shared">分享</string>
     <string name="version">版本</string>
+    <string name="doc_list">实用文库</string>
 </resources>

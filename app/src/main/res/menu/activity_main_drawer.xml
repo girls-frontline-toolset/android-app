@@ -79,7 +79,11 @@
             <item
                 android:id="@+id/nav_image"
                 android:title="@string/image" />
+            <item
+                android:id="@+id/nav_doc_list"
+                android:title="@string/doc_list" />
         </menu>
+
     </item>
 
     <item
