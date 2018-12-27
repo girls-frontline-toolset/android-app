@@ -10,6 +10,11 @@
             android:id="@+id/nav_index"
             android:icon="@drawable/ic_home"
             android:title="@string/home" />
+        <item
+            android:state_focused="false"
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_event"
+            android:title="@string/schedule" />
         </menu>
     </item>
 
@@ -77,8 +82,8 @@
 
         <menu>
             <item
-                android:id="@+id/nav_image"
-                android:title="@string/image" />
+                android:id="@+id/nav_link"
+                android:title="@string/link" />
             <item
                 android:id="@+id/nav_doc_list"
                 android:title="@string/doc_list" />

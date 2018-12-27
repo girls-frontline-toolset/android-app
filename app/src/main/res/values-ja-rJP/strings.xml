@@ -30,4 +30,6 @@
     <string name="navigation_drawer_open">スタート</string>
     <string name="navigation_drawer_close">閉じる</string>
     <string name="doc_list">実践文庫</string>
+    <string name="schedule">活動スケジュール(台湾版)</string>
+    <string name="link">関連URL</string>
 </resources>

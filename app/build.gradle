@@ -2,17 +2,18 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '27.0.3'
+    buildToolsVersion '28.0.3'
     defaultConfig {
-        applicationId "com.ntw_20.girlsfrontlinetime"
+        applicationId "com.ntw_20.girlsfronttime"
         minSdkVersion 19
         targetSdkVersion 26
-        versionCode 3
-        versionName "1.3.2"
+        versionCode 6
+        versionName "1.3.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
+            applicationIdSuffix ".release"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

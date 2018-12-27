@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">少女前線-工具集</string>
+    <string name="app_name">少女前線 工具集</string>
     <string name="line" translatable="false">Line</string>
     <string name="line_bot">Line 機械人</string>
     <string name="line_group">Line 群</string>
@@ -30,5 +30,7 @@
     <string name="navigation_drawer_open">開始</string>
     <string name="navigation_drawer_close">關閉</string>
     <string name="doc_list">實用文庫</string>
+    <string name="schedule">活動時間表(繁中版)</string>
+    <string name="link">相關網址</string>
 
 </resources>

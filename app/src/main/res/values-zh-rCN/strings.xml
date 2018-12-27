@@ -30,4 +30,6 @@
     <string name="shared">分享</string>
     <string name="version">版本</string>
     <string name="doc_list">实用文库</string>
+    <string name="schedule">活动时间表(繁中版)</string>
+    <string name="link">相关网址</string>
 </resources>
