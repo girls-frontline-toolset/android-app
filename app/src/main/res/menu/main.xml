@@ -17,6 +17,12 @@
         android:title="@string/updateLog"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_setting"
+        android:orderInCategory="100"
+        android:title="@string/setting"
+        app:showAsAction="never" />
+
 
 
 </menu>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/task"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingLeft="15dp"
+            android:text="@string/daily_reminder" />
+
+        <Switch
+            android:id="@+id/Intelligence_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/open_intelligence_task"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/Daily_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/open_daily_task"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/Friend_use"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/open_friends_to_use"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/Like"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/open_dauly_likes_and_get_battery"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/Battery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/open_battery_to_get"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/Event_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/open_event_task"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/system"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingLeft="15dp"
+            android:text="@string/setting" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/language"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerLanguage"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

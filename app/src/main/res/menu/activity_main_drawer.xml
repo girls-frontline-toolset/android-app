@@ -32,6 +32,14 @@
             <item
                 android:id="@+id/nav_time_fairy"
                 android:title="@string/time_fairy" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_make"
+        android:title="@string/make">
+
+        <menu>
             <item
                 android:id="@+id/nav_time_make"
                 android:title="@string/time_make" />
@@ -44,7 +52,6 @@
             <item
                 android:id="@+id/nav_time_make_HDevice"
                 android:title="@string/time_make_HDevice" />
-
         </menu>
     </item>
 
@@ -59,6 +66,12 @@
             <item
                 android:id="@+id/nav_time_list_fairy"
                 android:title="@string/list_fairy" />
+            <item
+                android:id="@+id/nav_list_wafer"
+                android:title="@string/list_wafer" />
+            <item
+                android:id="@+id/nav_support_unit"
+                android:title="@string/list_support_unit" />
         </menu>
     </item>
 

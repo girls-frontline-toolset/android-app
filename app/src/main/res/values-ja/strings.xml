@@ -32,4 +32,24 @@
     <string name="doc_list">実践文庫</string>
     <string name="schedule">活動スケジュール(台湾版)</string>
     <string name="link">関連URL</string>
+    <string name="setting">設定</string>
+    <string name="ja">日本語</string>
+    <string name="tw">繁體中文</string>
+    <string name="zh">简体中文</string>
+    <string name="success">完了しました</string>
+    <string name="daily_reminder">毎日のリマインダー</string>
+    <string name="tool_so_appetizing">本当の香ジェネレータ</string>
+    <string name="list_wafer">晶片図鑑</string>
+    <string name="list_support_unit">重裝図鑑</string>
+    <string name="make_wafer">アナログコンビネーション-チップ ベータ</string>
+    <string name="information">情報</string>
+    <string name="make">建設</string>
+    <string name="magical_tool">魔法の道具</string>
+    <string name="language">言語</string>
+    <string name="open_intelligence_task">インテリジェンスタスクプロンプトを開く</string>
+    <string name="open_daily_task">毎日のタスクのヒントを有効にする</string>
+    <string name="open_friends_to_use">ヒントを使うには友達をオンにしてください</string>
+    <string name="open_dauly_likes_and_get_battery">毎日好きなものをオンにしてバッテリーのヒントを入手する</string>
+    <string name="open_battery_to_get">ヒントを得るためにバッテリーをオンにする</string>
+    <string name="open_event_task">アクティビティタスクプロンプトを開く（繁中版）</string>
 </resources>

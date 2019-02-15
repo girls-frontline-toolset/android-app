@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">少女前線-工具集</string>
+    <string name="app_name">少女前线 - 工具集</string>
     <string name="line_bot">Line 机械人</string>
     <string name="line_group">LINE群</string>
     <string name="other">其他</string>
@@ -32,4 +32,24 @@
     <string name="doc_list">实用文库</string>
     <string name="schedule">活动时间表(繁中版)</string>
     <string name="link">相关网址</string>
+    <string name="setting">设定</string>
+    <string name="ja">日本語</string>
+    <string name="tw">繁體中文</string>
+    <string name="zh">简体中文</string>
+    <string name="success">完成</string>
+    <string name="daily_reminder">每日提示</string>
+    <string name="tool_so_appetizing">真香生成器</string>
+    <string name="make_wafer">模拟组合-晶片 测试版</string>
+    <string name="list_wafer">晶片图鉴</string>
+    <string name="list_support_unit">重装图鉴</string>
+    <string name="information">消息</string>
+    <string name="make">建造</string>
+    <string name="magical_tool">神奇工具</string>
+    <string name="language">语言</string>
+    <string name="open_intelligence_task">开启情报任务提示</string>
+    <string name="open_daily_task">开启每日任务提示</string>
+    <string name="open_friends_to_use">开启好友使用提示</string>
+    <string name="open_dauly_likes_and_get_battery">开启每日点赞及拿电池提示</string>
+    <string name="open_battery_to_get">开启电池拿取提示</string>
+    <string name="open_event_task">开启活动任务提示(繁中版)</string>
 </resources>
