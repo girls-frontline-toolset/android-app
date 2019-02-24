@@ -244,9 +244,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_time_make_device) {
             call = "javascript:window.pushPush('/make/device')";
         } else if (id == R.id.nav_time_list) {
-            call = "javascript:window.pushPush('/time/list')";
+            call = "javascript:window.pushPush('/list/girl')";
         } else if (id == R.id.nav_time_list_fairy) {
-            call = "javascript:window.pushPush('/time/list_fairy')";
+            call = "javascript:window.pushPush('/list/fairy')";
         } else if (id == R.id.nav_fb_list) {
             call = "javascript:window.pushPush('/fb/list')";
         } else if (id == R.id.nav_time_like_list) {
