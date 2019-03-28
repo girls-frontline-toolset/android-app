@@ -103,5 +103,6 @@
     <string name="magical_tool">神奇工具</string>
     <string name="make">建造</string>
     <string name="information">消息</string>
+    <string name="en" translatable="false">English</string>
 
 </resources>

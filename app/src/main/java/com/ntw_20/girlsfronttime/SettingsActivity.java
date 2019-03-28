@@ -68,7 +68,7 @@ public class SettingsActivity extends AppCompatActivity {
 
 
         this.dropdown = (Spinner)findViewById(R.id.spinnerLanguage);
-        String[] items = new String[]{getResources().getString(R.string.tw), getResources().getString(R.string.zh), getResources().getString(R.string.ja)};
+        String[] items = new String[]{getResources().getString(R.string.tw), getResources().getString(R.string.zh), getResources().getString(R.string.ja), getResources().getString(R.string.en)};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
         dropdown.setAdapter(adapter);
 
@@ -83,6 +83,9 @@ public class SettingsActivity extends AppCompatActivity {
                 break;
             case "ja":
                 dropdown.setSelection(2);
+                break;
+            case "en":
+                dropdown.setSelection(3);
                 break;
         }
 
@@ -100,7 +103,7 @@ public class SettingsActivity extends AppCompatActivity {
 
                 SharedPreferences pref = getSharedPreferences("setting", MODE_PRIVATE);
 
-                String[] lang = {"tw","zh","ja"};
+                String[] lang = {"tw","zh","ja","en"};
 
                 pref.edit().putString("lang", lang[position]).apply();
 

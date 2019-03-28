@@ -90,13 +90,17 @@ public class MainActivity extends AppCompatActivity
             case "zh_CN_#Hans":
                 lang = "cn/";
                 break;
+            case "zh_HK":
+            case "zh_TW_#Hant":
+                lang = "";
+                break;
             case "ja_JP":
             case "ja":
             case "ja_jp":
                 lang = "ja/";
                 break;
             default:
-                lang = "";
+                lang = "en/";
         }
 
 
