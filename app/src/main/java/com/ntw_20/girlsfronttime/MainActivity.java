@@ -87,10 +87,13 @@ public class MainActivity extends AppCompatActivity
 
         switch (lang) {
             case "zh":
+            case "zh_HK_#Hans":
             case "zh_CN_#Hans":
                 lang = "cn/";
                 break;
-            case "zh_HK":
+            case "tw":
+            case "hk":
+            case "zh_HK_#Hant":
             case "zh_TW_#Hant":
                 lang = "";
                 break;

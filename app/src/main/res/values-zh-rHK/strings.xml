@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">少女前線 工具集</string>
+    <string name="line_bot">Line 機械人</string>
+    <string name="line_group">Line 群</string>
+    <string name="other">其他</string>
+    <string name="shared">分享</string>
+    <string name="version">版本</string>
+    <string name="add_image">添加作品</string>
+    <string name="image">圖片庫</string>
+    <string name="tools">工具</string>
+    <string name="fb_like">讚友招募區域"</string>
+    <string name="fb_list">好友招募區域</string>
+    <string name="list">招募區域</string>
+    <string name="list_fairy">妖精圖鑑</string>
+    <string name="time_list">人型圖鑑</string>
+    <string name="i">圖鑑</string>
+    <string name="home">主頁</string>
+    <string name="time">時間</string>
+    <string name="time_girl">人型時間</string>
+    <string name="time_device">裝備時間</string>
+    <string name="time_fairy">妖精時間</string>
+    <string name="time_make">模擬造槍</string>
+    <string name="time_make_device">模擬造裝</string>
+    <string name="time_hMake">模擬重造-槍</string>
+    <string name="time_make_HDevice">模擬重造-裝</string>
+    <string name="feedback">問題回報或建議</string>
+    <string name="about">關於</string>
+    <string name="updateLog">更新記錄</string>
+    <string name="navigation_drawer_open">開始</string>
+    <string name="navigation_drawer_close">關閉</string>
+    <string name="doc_list">實用文庫</string>
+    <string name="schedule">活動時間表(繁中版)</string>
+    <string name="setting">設定</string>
+    <string name="link">相關網址</string>
+    <string name="ja">日本語</string>
+    <string name="tw">繁體中文</string>
+    <string name="zh">简体中文</string>
+    <string name="success">完成</string>
+    <string name="daily_reminder">每日提示</string>
+    <string name="open_intelligence_task">開啟情報任務提示</string>
+    <string name="open_daily_task">開啟每日任務提示</string>
+    <string name="open_friends_to_use">開啟好友使用提示</string>
+    <string name="open_dauly_likes_and_get_battery">開啟每日點讚及拿電池提示</string>
+    <string name="open_battery_to_get">開啟電池拿取提示</string>
+    <string name="open_event_task">開啟活動任務提示(繁中版)</string>
+    <string name="language">語言</string>
+    <string name="make_wafer">模擬組合-晶片 測試版</string>
+    <string name="list_wafer">晶片圖鑑</string>
+    <string name="list_support_unit">重裝圖鑑</string>
+    <string name="tool_so_appetizing">真香生成器</string>
+    <string name="magical_tool">神奇工具</string>
+    <string name="make">建造</string>
+    <string name="information">消息</string>
+
+</resources>

@@ -7,8 +7,8 @@ android {
         applicationId "com.ntw_20.girlsfronttime"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 9
-        versionName "1.5.0"
+        versionCode 10
+        versionName "1.5.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
