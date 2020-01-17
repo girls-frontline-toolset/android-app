@@ -52,4 +52,8 @@
     <string name="open_dauly_likes_and_get_battery">毎日好きなものをオンにしてバッテリーのヒントを入手する</string>
     <string name="open_battery_to_get">ヒントを得るためにバッテリーをオンにする</string>
     <string name="open_event_task">アクティビティタスクプロンプトを開く（繁中版）</string>
+    <string name="dailyNotificationTwVer">今日のヒント (台湾版)</string>
+    <string name="close">閉じる</string>
+    <string name="cancel">取り消す</string>
+    <string name="logistics_support">後方支援のおすすめパソコン</string>
 </resources>

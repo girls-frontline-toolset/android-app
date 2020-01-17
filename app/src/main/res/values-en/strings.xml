@@ -52,4 +52,8 @@
     <string name="magical_tool">Magical tool</string>
     <string name="make">Production</string>
     <string name="information">Information</string>
+    <string name="dailyNotificationTwVer">Daily Notification (Tw Ver)</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="logistics_support">logistics support calculators</string>
 </resources>

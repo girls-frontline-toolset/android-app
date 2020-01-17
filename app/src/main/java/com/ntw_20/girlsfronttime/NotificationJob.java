@@ -136,7 +136,7 @@ public class NotificationJob extends JobService {
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID);
         String KEY_NOTIFICATION_GROUP = "GirlsFrontLine";
         notificationBuilder
-                .setContentTitle("每日提示")
+                .setContentTitle(getResources().getString(R.string.dailyNotificationTwVer))
                 .setColor(this.getResources().getColor(R.color.colorPrimary))
                 .setContentText(contentText)
                 .setChannelId(NOTIFICATION_CHANNEL_ID)
@@ -146,8 +146,8 @@ public class NotificationJob extends JobService {
                 //.setLargeIcon(R.drawable.ic_logo)
                 .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
                 //.addAction(R.drawable.ic_check, "完成", successPendingIntent)
-                .addAction(R.drawable.ic_check, "完成", cancelPendingIntent)
-                .addAction(R.drawable.ic_close, "跳過", cancelPendingIntent)
+                .addAction(R.drawable.ic_check, getResources().getString(R.string.success), cancelPendingIntent)
+                .addAction(R.drawable.ic_close, getResources().getString(R.string.cancel), cancelPendingIntent)
                 .setSmallIcon(R.drawable.ic_logo)
                 .setGroup(KEY_NOTIFICATION_GROUP);
 
@@ -176,7 +176,7 @@ public class NotificationJob extends JobService {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(NOTIFICATION_CHANNEL_ID,
-                    "每日提示",
+                    getResources().getString(R.string.dailyNotificationTwVer),
                     NotificationManager.IMPORTANCE_DEFAULT);
             mNotificationManager.createNotificationChannel(channel);
         }

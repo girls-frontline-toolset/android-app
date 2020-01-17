@@ -76,6 +76,17 @@
     </item>
 
     <item
+        android:id="@+id/magical_tool"
+        android:title="@string/magical_tool">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logistics_support"
+                android:title="@string/logistics_support" />
+        </menu>
+    </item>
+
+    <item
         android:id="@+id/nav_category_list_fb"
         android:title="@string/list">
 

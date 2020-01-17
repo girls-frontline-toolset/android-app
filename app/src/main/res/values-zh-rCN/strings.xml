@@ -52,4 +52,8 @@
     <string name="open_dauly_likes_and_get_battery">开启每日点赞及拿电池提示</string>
     <string name="open_battery_to_get">开启电池拿取提示</string>
     <string name="open_event_task">开启活动任务提示(繁中版)</string>
+    <string name="dailyNotificationTwVer">每日提示(繁中版)</string>
+    <string name="cancel">取消</string>
+    <string name="close">关闭</string>
+    <string name="logistics_support">后勤推荐计算机</string>
 </resources>

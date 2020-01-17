@@ -276,8 +276,10 @@ public class MainActivity extends AppCompatActivity
             call = "javascript:window.pushPush('/more/link')";
         } else if (id == R.id.nav_list_wafer){
             call = "javascript:window.pushPush('/list/wafer')";
-        } else if (id == R.id.nav_support_unit){
+        } else if (id == R.id.nav_support_unit) {
             call = "javascript:window.pushPush('/list/support_unit')";
+        } else if (id == R.id.nav_logistics_support){
+            call = "javascript:window.pushPush('/magical-tool/logistics-support')";
         } else if (id == R.id.nav_shared) {
             Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
             sharingIntent.setType("text/plain");

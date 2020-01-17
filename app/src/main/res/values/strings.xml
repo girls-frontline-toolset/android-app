@@ -104,5 +104,9 @@
     <string name="make">Production</string>
     <string name="information">Information</string>
     <string name="en" translatable="false">English</string>
+    <string name="dailyNotificationTwVer">Daily Notification Tw Ver</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="logistics_support">logistics support calculators</string>
 
 </resources>
