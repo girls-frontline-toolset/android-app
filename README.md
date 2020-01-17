@@ -21,7 +21,7 @@
 <img src="/image/01.jpg" alt="image_1" width="200" /><img src="/image/02.jpg" alt="image_1" width="200" />
 <img src="/image/03.jpg" alt="image_1" width="200" /><img src="/image/04.jpg" alt="image_1" width="200" />
 <img src="/image/05.jpg" alt="image_1" width="200" /><img src="/image/06.jpg" alt="image_1" width="200" />
-<img src="/image/07.jpg" alt="image_1" width="200" /><img src="/image/08.jpg" alt="image_1" width="200" />
+<img src="/image/07.jpg" alt="image_1" width="200" />
 
 ## 4. google play
 [少女前線-工具集](https://play.google.com/store/apps/details?id=com.ntw_20.girlsfronttime.release) 
